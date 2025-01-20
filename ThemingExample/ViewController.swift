@@ -11,9 +11,18 @@ class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+    view.backgroundColor = Theme.backgroundColor
   }
 
+  @IBAction
+  func toggleTheme() {
+    let oldTheme = ThemeStore.shared.getTheme()
+    let newTheme = oldTheme == .dark ? Theme.light : Theme.dark
 
+    guard let windowScene = view.window?.windowScene else { return }
+
+    // Update the current theme in the theme store and update the trait overrides.
+    ThemeStore.shared.setTheme(newTheme)
+    windowScene.traitOverrides.theme = newTheme
+  }
 }
-
