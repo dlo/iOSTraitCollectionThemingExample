@@ -1,6 +1,6 @@
 # iOSTraitCollectionThemingExample
 
-This is a super simple example application meant to be used in tandem with my blog post on theming iOS apps using `UITraitCollection` (so please read that first if you haven't yet!).
+This is a super simple example application meant to be used in tandem with [my blog post on theming iOS apps using `UITraitCollection`](https://dlo.me/archives/2025/01/20/theming-ios-apps-uitraitcollection/) (so please read that first if you haven't yet!).
 
 ## Building
 
